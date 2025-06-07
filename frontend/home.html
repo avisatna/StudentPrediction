@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>🎓 Student Dashboard</h1>
+  </header>
+
+ <!--Navbar-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Result Management</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 90px 0px;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      background-color: #2c3e50;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    
+
+  .navbar .brand {
+      font-size: 20%;
+      font-weight: bold;
+    }
+    
+    .nav-toggle {
+      font-size: 24px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+    }
+
+    .nav-menu li {
+      position: relative;
+    }
+
+    .nav-menu a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+    }
+    .nav-menu a:hover {
+      background-color: #1abc9c;
+    }
+    /* Dropdown */
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #34495e;
+      min-width: 180px;
+    }
+
+    .dropdown a {
+      padding: 10px;
+      white-space: nowrap;
+    }
+
+    .nav-menu li.show .dropdown {
+      display: block;
+    }
+   
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: block;
+      }
+
+      .nav-menu {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        background-color: #2c3e50;
+      }
+
+      .nav-menu.show {
+        display: flex;
+      }
+
+      .nav-menu li {
+        width: 100%;
+      }
+    }
+    h2 {
+    text-align: center;
+    font-size: 210%;
+    margin-bottom: 30px;
+    color: #350b5e;
+    animation: slideDown 1s ease-out;
+  }
+    main {
+      margin-top: 70px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="brand"></div>
+    <img src="LOGO.png" style="width: 75px;">`
+    <div class="nav-toggle" onclick="toggleNav()">☰</div>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li onclick="toggleDropdown(this)">
+        <a href="result.html">Results ▼</a>
+        <div class="dropdown">
+          <a href="result.html">View Results</a>
+          <a href="result.html">Add Results</a>
+          <a href="result.html">Update Results</a>
+          <a href="result.html">Delete Results</a>
+        </div>
+      </li>
+      <li onclick="toggleDropdown(this)">
+        <a href="attendence.html">Attendance ▼</a>
+        <div class="dropdown">
+          <a href="attendence.html">Daily</a>
+          <a href="attendence.html">Monthly</a>
+        </div>
+      </li>
+      <li><a href="#">Notices</a></li>
+      <li><a href="loign.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>WELCOME TO EDUGRADE PORTAL</h2>
+   
+  </main>
+
+  <script>
+    function toggleNav() {
+      document.getElementById("navMenu").classList.toggle("show");
+    }
+
+    function toggleDropdown(el) {
+      el.classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
+
+
+<main>
+  
+
+
+  
+  </main>
+
+  <footer>
+    <a href="mailto:rahul@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://wa.me/919876543210"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://github.com/rahulsharma"><i class="fab fa-github"></i></a>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>
